@@ -54,6 +54,7 @@ h1 {
     float: left;
 }
 .title-text {
+    font-weight: bold;
     display: flex;
     flex-direction: column;
 }
