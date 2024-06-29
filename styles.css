@@ -7,11 +7,6 @@ body {
 }
 header {
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 header h1 {
     margin: 0;
@@ -65,10 +60,33 @@ h1 {
     display: none;
 }
 .link-style{text-decoration: none;}
-.link-style:link{color: #00C27C;}
-.link-style:hover{color: #00C27C; font-weight: bold;}
-.link-style:visited{color: #00C27C;}
-.link-style:active{color: red; font-weight: bolder;}
+.link-style:link{color: #ff8000;}
+.link-style:hover{color: #ff8000; font-weight: bold;}
+.link-style:visited{color: #ff8000;}
+.link-style:active{color: #fb0504; font-weight: bolder;}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.button-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6ecc6d;
+    color: #0000FF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button-container button:hover {
+    background-color: #6ecc6d;
+    transform: scale(1.05);
+}
+.button-container button:active {
+    background-color: #fb0504;
+    transform: scale(0.95);
+}
 .supporter-container {
     display: flex;
     justify-content: center;
@@ -79,7 +97,12 @@ h1 {
     flex-direction: row;
     padding: 20px 10px 0 10px;
 }
-
 footer {
     text-align: center;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
 }

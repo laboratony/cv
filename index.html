@@ -11,15 +11,15 @@
     <div class="container">
         <header>
             <h1>Khunakorn Limpsapapkasiphol</h1>
-            <p>Digital Geoscientist</p>
+            <p class="no-print">Digital Geoscientist</p>
             <div class="social-links">
-                <a href="mailto:khunakorn.limp@gmail.com" class="link-style">
+                <a href="mailto:khunakorn.limp@gmail.com" class="link-style no-print">
                     <img src="images/gmail.png" alt="Gmail" class="social-icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/khunakorn-limpsapapkasiphol/" class="link-style" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/khunakorn-limpsapapkasiphol/" class="link-style no-print" target="blank" rel="noopener noreferrer">
                     <img src="images/linkedin.png" alt="LinkedIn" class="social-icon" />
                 </a>
-                <a href="https://github.com/KhunakornLimp" class="link-style" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/KhunakornLimp" class="link-style no-print" target="blank" rel="noopener noreferrer">
                     <img src="images/github.png" alt="GitHub" class="social-icon" />
                 </a>
             </div>
@@ -30,33 +30,38 @@
             Actively seeking opportunities in geosciences (e.g., mining, energy, reservoirs, geophysics, geoinformatics, hydrology, geotechnics, and environment), 
             IT (e.g., data, ML, and software), or a blend of both.
         </p>
-        <hr />
-        The filter below can be used to explore my background and experiences in different fields:
-        <br />
-        <div class="filter">
-            <label><input type="checkbox" value="geoscience" onchange="filterExperience()"> <b>GEOSCIENCE</b></label>
-            <label><input type="checkbox" value="mining" onchange="filterExperience()"> Mining</label>
-            <label><input type="checkbox" value="energy" onchange="filterExperience()"> Energy/Reservoirs</label>
-            <label><input type="checkbox" value="seismic" onchange="filterExperience()"> Seismic</label>
-            <label><input type="checkbox" value="geospatial" onchange="filterExperience()"> Geospatial</label>
-            <label><input type="checkbox" value="meteo" onchange="filterExperience()"> Meteorology/Climate</label>
-            <label><input type="checkbox" value="env" onchange="filterExperience()"> Environment</label>
+        <div class="no-print">
+            <hr />
+            The filter below can be used to explore my background and experiences in different fields:
+            <br />
+            <div class="filter">
+                <label><input type="checkbox" value="geoscience" onchange="filterExperience()"> <b>GEOSCIENCE</b></label>
+                <label><input type="checkbox" value="mining" onchange="filterExperience()"> Mining</label>
+                <label><input type="checkbox" value="energy" onchange="filterExperience()"> Energy/Reservoirs</label>
+                <label><input type="checkbox" value="seismic" onchange="filterExperience()"> Seismic</label>
+                <label><input type="checkbox" value="geospatial" onchange="filterExperience()"> Geospatial</label>
+                <label><input type="checkbox" value="hydro-meteo" onchange="filterExperience()"> Hydrology/Ocean/Climate</label>
+            </div>
+            <div class="filter">
+                <label><input type="checkbox" value="it" onchange="filterExperience()"> <b>IT</b></label>
+                <label><input type="checkbox" value="software" onchange="filterExperience()"> Software</label>
+                <label><input type="checkbox" value="data" onchange="filterExperience()"> Data/ML</label>
+                <label><input type="checkbox" value="python" onchange="filterExperience()"> Python</label>
+            </div>
+            <div class="filter">
+                <label><input type="checkbox" value="edu" onchange="filterExperience()"> <b>TEACHING & TUTORING</b></label>
+            </div>
+            <div class="filter">
+                <label><input type="checkbox" value="finance" onchange="filterExperience()"> <b>FINANCE</b></label>
+            </div>
         </div>
-        <div class="filter">
-            <label><input type="checkbox" value="it" onchange="filterExperience()"> <b>IT</b></label>
-            <label><input type="checkbox" value="software" onchange="filterExperience()"> Software</label>
-            <label><input type="checkbox" value="data" onchange="filterExperience()"> Data/ML</label>
-        </div>
-        <div class="filter">
-            <label><input type="checkbox" value="edu" onchange="filterExperience()"> <b>TEACHING & TUTORING</b></label>
-        </div>
-        <div class="filter">
-            <label><input type="checkbox" value="finance" onchange="filterExperience()"> <b>FINANCE</b></label>
-        </div>
-        <hr />
-        <h2>Education</h2>
+
         <div id="experience-list">
-            <div class="experience title" data-field="geoscience mining energy seismic geospatial meteo env it software data finance">
+            <div class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo it software data python finance">
+                <hr />
+                <h2>Education</h2>
+            </div>
+            <div class="experience title" data-field="geoscience mining energy seismic geospatial hydro-meteo it software data python finance">
                 <a href="https://www.imperial.ac.uk/" target="blank">
                     <img src="images/icl.jpg" alt="ICL" class="company-logo">
                 </a>
@@ -66,7 +71,7 @@
                     London, UK | 09/2023 - 09/2024<br />
                 </b></div>
             </div>
-            <div class="experience" data-field="it software data">
+            <div class="experience" data-field="it software data python">
                 <ul><li>
                     Taught modules include:
                     <ul>
@@ -81,20 +86,20 @@
                     </ul>
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience seismic geospatial meteo env">
+            <div class="experience" data-field="geoscience seismic geospatial hydro-meteo">
                 <ul><li>
                     Acquired additional knowledge of geospatial, seismic, and climatic data 
                     (in terms of underlying physical principles and data handling) from 
                     the Environmental Data module.
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience env it data">
+            <div class="experience" data-field="geoscience it data">
                 <ul><li>
                     Applied data science and machine learning techniques to diverse Earth and environmental 
                     datasets in individual coursework and team projects over the degree.
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience meteo env it software data">
+            <div class="experience" data-field="geoscience hydro-meteo it software data python">
                 <ul><li>
                     Notable team projects include:
                     <ul>
@@ -103,7 +108,7 @@
                         <li>Predicting wildfires using surrogate models together with data assimilation.</li>
                 </li></ul>
             </div>
-            <div class="experience title" data-field="geoscience mining energy seismic geospatial meteo env it software data finance">
+            <div class="experience title" data-field="geoscience mining energy seismic geospatial hydro-meteo it software data python finance">
                 <a href="https://www.imperial.ac.uk/" target="blank">
                     <img src="images/icl.jpg" alt="ICL" class="company-logo">
                 </a>
@@ -118,12 +123,12 @@
                     Focused on geophysics.
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience mining energy seismic geospatial meteo env it software data finance">
+            <div class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo it software data python finance">
                 <ul><li>
                     Graduated with First-class honours (~79%); on the Engineering Dean's list (top 10%) every academic year.
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience mining energy seismic geospatial meteo env">
+            <div class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo">
                 <ul><li>
                     Notable modules include:
                     <ul>
@@ -133,12 +138,12 @@
                         <li class="experience" data-field="geoscience seismic">Field Geophysics</li>
                         <li class="experience" data-field="geoscience seismic">Near-surface Seismic Imaging</li>
                         <li class="experience" data-field="geoscience seismic">Geophysical Inversion</li>
-                        <li class="experience" data-field="geoscience mining energy env">Earth Resources (non-credit)</li>
-                        <li class="experience" data-field="geoscience energy env">Hydrogeology and Fluid Flow in Porous Media</li>
+                        <li class="experience" data-field="geoscience mining energy">Earth Resources (non-credit)</li>
+                        <li class="experience" data-field="geoscience energy hydro-meteo">Hydrogeology and Fluid Flow in Porous Media</li>
                         <li class="experience" data-field="geoscience mining">Minerals Processing</li>
-                        <li class="experience" data-field="geoscience geospatial env">Remote Sensing Earth & Planets</li>
-                        <li class="experience" data-field="geoscience geospatial env">Advanced Remote Sensing</li>
-                        <li class="experience" data-field="geoscience meteo env">Climate</li>
+                        <li class="experience" data-field="geoscience geospatial hydro-meteo">Remote Sensing Earth & Planets</li>
+                        <li class="experience" data-field="geoscience geospatial hydro-meteo">Advanced Remote Sensing</li>
+                        <li class="experience" data-field="geoscience hydro-meteo">Climate</li>
                     </ul>
                 </li></ul>
             </div>
@@ -151,25 +156,24 @@
                     </ul>
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience mining energy geospatial env it software finance">
+            <div class="experience" data-field="geoscience mining energy geospatial hydro-meteo it software python finance">
                 <ul><li>
                     Notable projects include:
                     <ul>
-                        <li class="experience" data-field="geoscience env">Year 1 independent project: "Seawalls &mdash; Good or Bad Shield Preventing Coastal Erosion".</li>
-                        <li class="experience" data-field="geoscience energy env">Year 2 independent project: "An Evaluation of Artificial Dispersion as the Solution to the Problem of the 2022 Rayong Oil Spill".</li>
+                        <li class="experience" data-field="geoscience hydro-meteo">Year 1 independent project: "Seawalls &mdash; Good or Bad Shield Preventing Coastal Erosion".</li>
+                        <li class="experience" data-field="geoscience energy hydro-meteo">Year 2 independent project: "An Evaluation of Artificial Dispersion as the Solution to the Problem of the 2022 Rayong Oil Spill".</li>
                         <li class="experience" data-field="geoscience geospatial">The final-year independent project: "Mars2030's Landing Site: Northeast Syrtis Major".</li>
-                        <li class="experience" data-field="geoscience geospatial it software">Programming for Geoscientists (Python): "Drainage Pattern Analysis".</li>
+                        <li class="experience" data-field="geoscience geospatial hydro-meteo it software python">Programming for Geoscientists (Python): "Drainage Pattern Analysis".</li>
                         <li class="experience" data-field="geoscience mining it software finance">Advanced Programming (C++): "Financial Optimisation of Flotation".</li>
                     </ul>
                 </li></ul>
             </div>
-        </div>
 
-        <hr />
-        
-        <h2>Experience</h2>
-        <div id="experience-list">
-            <div class="experience title" data-field="geoscience energy seismic it software data">
+            <div class="experience" data-field="geoscience energy seismic geospatial hydro-meteo it software data python edu finance">
+                <hr />
+                <h2>Experience</h2>
+            </div>
+            <div class="experience title" data-field="geoscience energy seismic it software data python">
                 <a href="https://totalenergies.com/" target="blank">
                     <img src="images/total.png" alt="TotalEnergies" class="company-logo">
                 </a>
@@ -185,7 +189,7 @@
                     expanding expertise in quantitative seismic interpretation (QSI).
                 </li></ul>
             </div>
-            <div class="experience" data-field="geoscience energy seismic it software data">
+            <div class="experience" data-field="geoscience energy seismic it software data python">
                 <ul><li>
                     Work collaboratively in the QSI team to update the in-house software that 
                     converts seismic anomaly interpretation by proprietary formulas into 
@@ -239,7 +243,7 @@
                     Performed banking data ETL (Extract, Transform, and Load) using CloverDX alongside the aid of Java.
                 </li></ul>
             </div>
-            <div class="experience title" data-field="geoscience it software">
+            <div class="experience title" data-field="geoscience it software python">
                 <a href="https://www.imperial.ac.uk/" target="blank">
                     <img src="images/icl.jpg" alt="ICL" class="company-logo">
                 </a>
@@ -287,7 +291,7 @@
                     in preparing for the University Clinical Aptitude Test (UCAT).
                 </li></ul>
             </div>
-            <div class="experience title" data-field="geoscience geospatial env">
+            <div class="experience title" data-field="geoscience geospatial hydro-meteo it python">
                 <a href="https://www.imperial.ac.uk/" target="blank">
                     <img src="images/icl.jpg" alt="ICL" class="company-logo">
                 </a>
@@ -318,13 +322,12 @@
                     Being invited back to conduct tutoring sessions remotely in 2021.
                 </li></ul>
             </div>
-        </div>
-
-        <hr />
-        
-        <h2>Achievements</h2>
-        <div id="experience-list">
-            <ul class="experience" data-field="geoscience meteo env">
+            
+            <div class="experience" data-field="geoscience energy seismic geospatial hydro-meteo it finance">
+                <hr />
+                <h2>Achievements</h2>
+            </div>
+            <ul class="experience" data-field="geoscience hydro-meteo">
                 <li><b>Semi-finalist, ClimateScience Olympiad [2023]</b></li>
             </ul>
             <ul class="experience" data-field="geoscience it finance">
@@ -337,44 +340,46 @@
             <ul class="experience" data-field="">
                 <li><b>Gold Certificate and Top 30 nationally, UK Chemistry Olympiad (UKChO) round 1 [2020]</b></li>
             </ul>
-            <ul class="experience" data-field="geoscience mining energy seismic geospatial meteo env">
+            <ul class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo">
                 <li><b>Representative of Thailand and Bronze medal, 12th International Earth Science Olympiad (IESO) [2018]</b></li>
             </ul>
-            <ul class="experience" data-field="geoscience mining energy seismic geospatial meteo env">
+            <ul class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo">
                 <li><b>1st substitute of Thailand, 11th IESO [2017]</b></li>
             </ul>
-        </div>
-
-        <hr />
             
-        <h2>Skills</h2>
-        <div id="experience-list">
-            <ul class="experience" data-field="geoscience mining energy seismic geospatial meteo env">
+            <hr />
+            <h2>Skills</h2>
+            </div>
+            <ul class="experience" data-field="geoscience mining energy seismic geospatial hydro-meteo">
                 <li><b>GEOSCIENCE SOFTWARE</b>: Petrel, ArcGIS, QGIS, ERDAS</li>
             </ul>
-            <ul class="experience" data-field="geoscience mining energy seismic geospatial meteo env it software data edu finance">
+            <ul>
                 <li><b>MICROSOFT APPLICATIONS</b>: Word, Excel, PowerPoint, Outlook, Power BI</li>
             </ul>
-            <ul class="experience" data-field="it software data">
-                <li><b>PROGRAMMING</b>: Python (e.g., Numpy, Pandas, Matplotlib, SciPy, Scikit-learn, Tersorflow, PyTorch, Flask), 
-                C++, C#, Java, HTML, CSS, JavaScript (Node, React, Express)</li>
+            <ul class="experience" data-field="it software data python">
+                <li><b>PROGRAMMING</b>: 
+                    Python (e.g., Numpy, Pandas, Matplotlib, SciPy, Scikit-learn, Tersorflow, PyTorch, Flask)<span class="experience" data-field="it software data">, C++, C#, Java, HTML, CSS, JavaScript (Node, React, Express)</span>
+                </li>
             </ul>
             <ul class="experience" data-field="it software data">
                 <li><b>DATABASE</b>: SQL query, MongoDB</li>
             </ul>
-            <ul class="experience" data-field="it software data">
-                <li><b>OTHER SOFTWARE</b>: LaTeX, Jupyter, Unity, Git & GitHub, CloverDX</li>
+            <ul>
+                <li><b>OTHER SOFTWARE</b>: LaTeX<span class="experience" data-field="it software data">, Jupyter, Unity, Git & GitHub, CloverDX</span></li>
             </ul>
-            <ul class="experience" data-field="">
+            <ul>
                 <li><b>LANGUAGES</b>: Thai (native), English (C1), Japanese (&lt;A1), French (&lt;A1)</li>
             </ul>
+
+            <hr />
+
+            <div class="button-container no-print">
+                <button onclick="window.print()">Print</button>
+            </div>
         </div>
-
-        <hr />
-
     </div>
 
-    <div class="supporter-container">
+    <div class="supporter-container no-print">
         <div>
             <a href="https://laboratony.github.io/book/intro.html" target="blank">
                 <img src="images/laboratony.png" alt="Laboratony" class="supporter-item">
@@ -387,7 +392,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="no-print">
         <p>&copy; 2024 Khunakorn Limpsapapkasiphol. All rights reserved.</p>
     </footer>
 
