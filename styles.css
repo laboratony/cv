@@ -60,9 +60,9 @@ h1 {
     display: none;
 }
 .link-style{text-decoration: none;}
-.link-style:link{color: #ff8000;}
-.link-style:hover{color: #ff8000; font-weight: bold;}
-.link-style:visited{color: #ff8000;}
+.link-style:link{color: #00a0e5;}
+.link-style:hover{color: #00a0e5; font-weight: bold;}
+.link-style:visited{color: #00a0e5;}
 .link-style:active{color: #fb0504; font-weight: bolder;}
 .button-container {
     display: flex;
@@ -102,7 +102,14 @@ footer {
 }
 
 @media print {
-    .no-print {
-        display: none;
+    .hide-print {
+        display: none !important;
     }
+    .print-only {
+        display: block !important;
+    }
+}
+
+.print-only {
+    display: none;
 }
