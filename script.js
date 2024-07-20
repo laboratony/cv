@@ -14,3 +14,25 @@ function filterExperience() {
         }
     });
 }
+
+// Initialize EmailJS
+(function(){
+    emailjs.init("sCyd-LGcr4poEDZ0F");
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Replace these IDs with your own
+    const serviceID = 'service_149i6qp';
+    const templateID = 'template_eipxyj4';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert("Your message has been sent successfully!");
+        }, (err) => {
+            alert("Error sending message: " + JSON.stringify(err));
+        });
+
+    this.reset();
+});

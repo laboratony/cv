@@ -87,6 +87,32 @@ h1 {
     background-color: #fb0504;
     transform: scale(0.95);
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.inline-inputs {
+    display: flex;
+    gap: 10px;
+}
+.inline-inputs input {
+    flex: 1;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-size: 12px;
+}
 .supporter-container {
     display: flex;
     justify-content: center;

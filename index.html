@@ -7,6 +7,7 @@
     <link rel="icon" type="images/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
+<!-- Run "python -m http.server 8000" in Terminal and go to "localhost:8000" to go to the html page locally -->
 <body>
     <div class="container">
         <header>
@@ -390,6 +391,28 @@
         </div>
     </div>
 
+    <br class="hide-print" />
+
+    <div class="container hide-print">
+        <header>
+            <h2>Contact</h2>
+        </header>
+        <p>
+            You can leave your message to contact me. It will be sent to my official email.
+        </p>
+        <form id="contact-form" class="contact-form">
+            <div class="inline-inputs">
+                <input type='text' placeholder='Name' name='user_name' required />
+                <input type='email' placeholder='Email' name='user_email' required />
+            </div>
+            <input type='text' placeholder='Subject' name='subject' required />
+            <textarea placeholder='Type your message here ...' name='message' rows='8' required></textarea>
+            <div class="button-container hide-print">
+                <button type='submit'>Submit</button>
+            </div>
+        </form>
+    </div>
+
     <div class="supporter-container hide-print">
         <div>
             <a href="https://laboratony.github.io/book/intro.html" target="blank">
@@ -407,6 +430,7 @@
         <p>&copy; 2024 Khunakorn Limpsapapkasiphol. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
