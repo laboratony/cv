@@ -24,7 +24,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault();
 
     // Replace these IDs with your own
-    const serviceID = 'service_149i6qp';
+    const serviceID = 'service_kn1nn9q';
     const templateID = 'template_eipxyj4';
 
     emailjs.sendForm(serviceID, templateID, this)
