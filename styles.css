@@ -105,6 +105,9 @@ h1 {
 .contact-form textarea::placeholder {
     font-size: 12px;
 }
+.hidden {
+    display: none;
+}
 .supporter-container {
     display: flex;
     justify-content: center;
